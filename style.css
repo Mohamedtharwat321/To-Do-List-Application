@@ -1,0 +1,132 @@
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/* ************************ */
+/* General */
+/* ************************ */
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: monospace;
+  line-height: 1;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #04475f, #24768f);
+  background-size: 300% 300%;
+}
+/* ************************ */
+/* General */
+/* ************************ */
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+hr {
+  width: 60%;
+  margin-bottom: 1.6rem;
+}
+
+.container {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+.container h3 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+.container input {
+  padding: 0.8rem 1.1rem;
+  border-radius: 6px;
+  margin-bottom: 1.4rem;
+  border: 3px solid #f0f0f0;
+}
+input:focus {
+  outline: 0;
+  border-color: #043892;
+}
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 3rem;
+}
+.task-box {
+  position: relative;
+}
+.fa-pen,
+.fa-trash-can {
+  position: absolute;
+  cursor: pointer;
+  top: 0.8rem;
+  font-size: 1.6rem;
+  color: #04475f;
+}
+.fa-pen {
+  right: 3.2rem;
+}
+.fa-trash-can {
+  right: 0.8rem;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 0.6rem 0rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-family: monospace;
+  font-weight: bold;
+  text-align: center;
+  background-color: #001c4e;
+  color: white;
+  border: 2px solid #001c4e;
+  cursor: pointer;
+}
+.add-btn:focus {
+  outline: none;
+  border: 2.5px solid #0b45a8;
+}
+.add-btn:hover {
+  transform: scale(1.04);
+  background-color: #04255e;
+}
+
+.box {
+  border: 2px solid #a0c3ff;
+  padding: 0.4rem 0.8rem;
+}
+.bottom-line {
+  margin-top: 1.6rem;
+}
+
+/* ************************ */
+/* below 1136px (landscape tablets) */
+/* ************************ */
+@media (max-width: 71em) {
+  .container {
+    flex-direction: column;
+    gap: 5.4rem;
+  }
+  .container input {
+    width: 100%;
+  }
+}
